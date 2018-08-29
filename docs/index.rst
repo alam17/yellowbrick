@@ -25,14 +25,15 @@ Feature Visualization
 - :doc:`api/features/pcoords`: horizontal visualization of instances
 - :doc:`Radial Visualization <api/features/radviz>`: separation of instances around a circular plot
 - :doc:`api/features/pca`: projection of instances based on principal components
+- :doc:`api/features/manifold`: high dimensional visualization with manifold learning
 - :doc:`api/features/importances`: rank features by importance or linear coefficients for a specific model
 - :doc:`api/features/rfecv`: find the best subset of features based on importance
-- :doc:`Scatter and Joint Plots<api/features/scatter>`: direct data visualization with feature selection
+- :doc:`Joint Plots <api/features/jointplot>`: direct data visualization with feature selection
 
 Classification Visualization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`api/classifier/class_balance`: see how the distribution of classes affects the model
+- :doc:`api/target/class_balance`: see how the distribution of classes affects the model
 - :doc:`api/classifier/class_prediction_error`: shows error and support in classification
 - :doc:`api/classifier/classification_report`: visual representation of precision, recall, and F1
 - :doc:`ROC/AUC Curves <api/classifier/rocauc>`: receiver operator characteristics and area under the curve
@@ -51,6 +52,7 @@ Clustering Visualization
 
 - :doc:`K-Elbow Plot <api/cluster/elbow>`: select k using the elbow method and various metrics
 - :doc:`Silhouette Plot <api/cluster/silhouette>`: select k by visualizing silhouette coefficient values
+- :doc:`api/cluster/icdm`: show relative distance and size/importance of clusters
 
 Model Selection Visualization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +64,8 @@ Text Visualization
 ~~~~~~~~~~~~~~~~~~
 
 - :doc:`Term Frequency <api/text/freqdist>`: visualize the frequency distribution of terms in the corpus
-- :doc:`api/text/tsne`: use stochastic neighbor embedding to project documents.
+- :doc:`api/text/tsne`: use stochastic neighbor embedding to project documents
+- :doc:`api/text/dispersion`: visualize how key terms are dispersed throughout a corpus
 
 ... and more! Visualizers are being added all the time; be sure to check the examples (or even the `develop branch <https://github.com/DistrictDataLabs/yellowbrick/tree/develop>`_) and feel free to contribute your ideas for new Visualizers!
 
@@ -95,7 +98,10 @@ The following is a complete listing of the Yellowbrick documentation for this ve
    evaluation
    contributing
    matplotlib
+   teaching
+   gallery
    about
+   faq
    code_of_conduct
    changelog
 

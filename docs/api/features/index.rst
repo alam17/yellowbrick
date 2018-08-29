@@ -12,16 +12,17 @@ our intent that the steering process will allow the data scientist to
 zoom and filter and explore the relationships between their instances
 and between dimensions.
 
-At the moment we have five feature analysis visualizers implemented:
+At the moment we have the following feature analysis visualizers implemented:
 
 -  :doc:`rankd`: rank single and pairs of features to detect covariance
 -  :doc:`radviz`: plot data points along axes ordered around a circle to detect separability
 -  :doc:`pcoords`: plot instances as lines along vertical axes to
    detect classes or clusters
 -  :doc:`pca`: project higher dimensions into a visual space using PCA
+-  :doc:`manifold`: visualize high dimensional data using manifold learning
 -  :doc:`importances`: rank features by relative importance in a model
 -  :doc:`rfecv`: select a subset of features by importance
--  :doc:`scatter`: plot instances by selecting subsets of features
+-  :doc:`jointplot`: (aka Jointplots) plot 2D correlation between features and target
 
 Feature analysis visualizers implement the ``Transformer`` API from
 scikit-learn, meaning they can be used as intermediate transform steps
@@ -39,9 +40,9 @@ is called which displays the image.
     from yellowbrick.features.pcoords import ParallelCoordinates
     from yellowbrick.features.jointplot import JointPlotVisualizer
     from yellowbrick.features.pca import PCADecomposition
+    from yellowbrick.features.manifold import Manifold
     from yellowbrick.features.importances import FeatureImportances
     from yellowbrick.features.rfecv import RFECV
-    from yellowbrick.features.scatter import ScatterVisualizer
 
 
 .. toctree::
@@ -51,6 +52,7 @@ is called which displays the image.
    rankd
    pcoords
    pca
+   manifold
    importances
    rfecv
-   scatter
+   jointplot
